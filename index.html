@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CRAVE HOUSE — mazali fast-food, burger, pizza va tezkor yetkazib berish.">
+  <meta name="theme-color" content="#111111">
+  <title>CRAVE HOUSE | Mazali lahzalar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">
+    <span>🔥</span> Birinchi buyurtmangizga 20% chegirma!
+    <a href="#menu">Buyurtma berish →</a>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">C.</span>
+        <span>CRAVE<span class="orange">HOUSE</span><small>FOOD EXPERIENCE</small></span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Bosh sahifa</a>
+        <a href="#categories">Kategoriyalar</a>
+        <a href="#menu">Menyu</a>
+        <a href="#offers">Aksiyalar</a>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#contact">Aloqa</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Mavzuni almashtirish">☾</button>
+        <button class="icon-btn" id="favoriteNav" aria-label="Sevimlilar">♡</button>
+        <button class="cart-nav" id="cartBtn">🛒 <span>Savatcha</span><b id="cartCount">0</b></button>
+        <button class="icon-btn profile-btn" id="profileBtn" aria-label="Profil">♙</button>
+        <button class="hamburger" id="hamburger" aria-label="Menyuni ochish">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg-circle"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow"><span></span> MAZALI TAOMLAR OLAMI</div>
+          <h1>Ochlikni unut.<br><span class="orange">Lazzatni</span> his qil!</h1>
+          <p>Har bir luqmada yangi taassurot. Eng sara ingredientlar, ajoyib ta'm va tezkor yetkazib berish — barchasi bir joyda.</p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">Buyurtma berish <span>↗</span></a>
+            <a href="#categories" class="btn btn-outline">Menyuni ko'rish</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>40+</strong><span>Taom turi</span></div>
+            <div><strong>4.9/5</strong><span>Mijozlar bahosi</span></div>
+            <div><strong>25 min</strong><span>Yetkazib berish</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-circle"></div>
+          <div class="hero-tag tag-top">🔥 ENG MASHHUR</div>
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1100&q=90" alt="Maxsus mazali burger" class="hero-food">
+          <div class="hero-tag tag-bottom"><span>⭐ 4.9</span> Mijozlar tanlovi</div>
+          <div class="floating-price">Faqat <strong>49 000 so'm</strong></div>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <span>01 / 04</span><div class="hero-line"></div><span>MAZALI. YANGI. TEZKOR.</span>
+      </div>
+    </section>
+
+    <section class="benefits container">
+      <div class="benefit"><span>🚀</span><div><b>Tez yetkazib berish</b><small>25–40 daqiqada</small></div></div>
+      <div class="benefit"><span>🥬</span><div><b>Yangi mahsulotlar</b><small>Har kuni yangi</small></div></div>
+      <div class="benefit"><span>👨‍🍳</span><div><b>Professional oshpazlar</b><small>Maxsus retseptlar</small></div></div>
+      <div class="benefit"><span>💳</span><div><b>Qulay to'lov</b><small>Naqd yoki karta</small></div></div>
+    </section>
+
+    <section class="section container" id="categories">
+      <div class="section-heading">
+        <div><div class="eyebrow">BIZNING MENYU</div><h2>Nimani <span class="orange">xohlaysiz?</span></h2></div>
+        <a href="#menu" class="text-link">Barcha taomlar →</a>
+      </div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow">TANLOV SIZDAN</div><h2>Bizning <span class="orange">menyu</span></h2><p class="section-desc">Har bir taom mehr bilan tayyorlanadi.</p></div>
+          <span class="menu-count" id="menuCount">40 ta taom</span>
+        </div>
+
+        <div class="menu-toolbar">
+          <div class="search-box"><span>⌕</span><input type="search" id="searchInput" placeholder="Taom nomini qidiring..."><button id="clearSearch">×</button></div>
+          <select id="sortSelect" aria-label="Saralash">
+            <option value="popular">Mashhurligi bo'yicha</option>
+            <option value="cheap">Arzonidan qimmatiga</option>
+            <option value="expensive">Qimmatidan arzoniga</option>
+            <option value="rating">Reyting bo'yicha</option>
+          </select>
+        </div>
+        <div class="filter-chips" id="filterChips"></div>
+        <div class="food-grid" id="foodGrid"></div>
+        <button class="btn btn-outline load-more" id="loadMore">Ko'proq ko'rish ↓</button>
+      </div>
+    </section>
+
+    <section class="offer-section" id="offers">
+      <div class="container offer-grid">
+        <div>
+          <div class="eyebrow">MAXSUS TAKLIF</div>
+          <h2>Bir buyurtma.<br><span>Ikki barobar</span><br>lazzat!</h2>
+          <p>Maxsus combo takliflarimizni sinab ko'ring. Sevimli taomlaringiz endi yanada foydali.</p>
+          <a href="#menu" class="btn btn-light">Aksiyalarni ko'rish ↗</a>
+        </div>
+        <div class="offer-image-wrap">
+          <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=1000&q=90" alt="Maxsus burger combo">
+          <div class="discount-circle">30%<small>CHEGIRMA</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="configurator">
+      <div class="section-heading">
+        <div><div class="eyebrow">SIZNING RETSEPTINGIZ</div><h2>O'z <span class="orange">burgeringizni</span> yarating</h2><p class="section-desc">Ingredientlarni tanlang va o'zingizga mos burger yarating.</p></div>
+      </div>
+      <div class="builder">
+        <div class="builder-visual">
+          <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?w=900&q=85" alt="Burger" id="builderImage">
+          <div class="builder-label">CHEF'S SPECIAL</div>
+          <h3>Sizning maxsus burgeringiz</h3>
+        </div>
+        <div class="builder-options">
+          <div class="option-group"><h3>01. Non turini tanlang</h3><div class="option-list" id="bunOptions">
+            <label><input type="radio" name="bun" value="Klassik non" data-price="0" checked><span>Klassik non</span><b>+0</b></label>
+            <label><input type="radio" name="bun" value="Sesame non" data-price="3000"><span>Sesame non</span><b>+3 000</b></label>
+            <label><input type="radio" name="bun" value="Qora non" data-price="5000"><span>Qora non</span><b>+5 000</b></label>
+          </div></div>
+          <div class="option-group"><h3>02. Go'sht tanlang</h3><div class="option-list">
+            <label><input type="radio" name="meat" value="Mol go'shti" data-price="18000" checked><span>Mol go'shti</span><b>+18 000</b></label>
+            <label><input type="radio" name="meat" value="Tovuq go'shti" data-price="12000"><span>Tovuq go'shti</span><b>+12 000</b></label>
+            <label><input type="radio" name="meat" value="Ikki qavat go'sht" data-price="30000"><span>Ikki qavat go'sht</span><b>+30 000</b></label>
+          </div></div>
+          <div class="option-group"><h3>03. Qo'shimchalar</h3><div class="option-list">
+            <label><input type="checkbox" name="extra" value="Pishloq" data-price="5000"><span>Pishloq</span><b>+5 000</b></label>
+            <label><input type="checkbox" name="extra" value="Bekon" data-price="8000"><span>Bekon</span><b>+8 000</b></label>
+            <label><input type="checkbox" name="extra" value="Pomidor" data-price="2000"><span>Pomidor</span><b>+2 000</b></label>
+            <label><input type="checkbox" name="extra" value="Bodring" data-price="2000"><span>Bodring</span><b>+2 000</b></label>
+            <label><input type="checkbox" name="extra" value="Maxsus sous" data-price="3000"><span>Maxsus sous</span><b>+3 000</b></label>
+          </div></div>
+          <div class="builder-total"><div><small>Umumiy narx</small><strong id="builderPrice">49 000 so'm</strong></div><button class="btn btn-primary" id="addCustomBurger">Savatchaga qo'shish +</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="combo-section">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow">MAXSUS KOMBO</div><h2>O'z <span class="orange">COMBO</span> to'plamingiz</h2></div></div>
+        <div class="combo-builder">
+          <div><label for="comboMain">Asosiy taom</label><select id="comboMain"><option value="0">Burger</option><option value="1">Pizza</option><option value="2">Lavash</option></select></div>
+          <div><label for="comboDrink">Ichimlik</label><select id="comboDrink"><option value="0">Cola</option><option value="1">Fanta</option><option value="2">Milkshake</option></select></div>
+          <div><label for="comboSide">Qo'shimcha</label><select id="comboSide"><option value="0">Fri</option><option value="1">Nuggets</option><option value="2">Onion Rings</option></select></div>
+          <div class="combo-result"><small>Combo narxi</small><strong id="comboPrice">89 000 so'm</strong><button class="btn btn-primary" id="addCombo">Combo olish +</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="about-grid">
+        <div class="about-image"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=1000&q=90" alt="CRAVE HOUSE taomi"><span>EST. 2024</span></div>
+        <div class="about-content"><div class="eyebrow">BIZ HAQIMIZDA</div><h2>Bizning maqsad — sizga <span class="orange">lazzat ulashish.</span></h2><p>CRAVE HOUSE — bu shunchaki fast-food emas. Bu yangi ta'mlar, sifatli ingredientlar va unutilmas taassurotlar uchrashadigan maskan.</p><div class="about-points"><div>✓ Har kuni yangi mahsulotlar</div><div>✓ Maxsus oshpaz retseptlari</div><div>✓ Tez va ehtiyotkor yetkazib berish</div></div><a href="#contact" class="btn btn-primary">Biz bilan bog'laning ↗</a></div>
+      </div>
+    </section>
+
+    <section class="review-section">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow">MIJOZLAR FIKRI</div><h2>Ular biz haqimizda <span class="orange">nima deydi?</span></h2></div><div class="review-controls"><button id="reviewPrev">←</button><button id="reviewNext">→</button></div></div>
+        <div class="review-card" id="reviewCard"></div>
+        <form class="review-form" id="reviewForm"><h3>Fikringizni qoldiring</h3><input name="name" placeholder="Ismingiz" required><select name="rating"><option value="5">5 yulduz</option><option value="4">4 yulduz</option><option value="3">3 yulduz</option></select><textarea name="message" placeholder="Fikringiz..." required></textarea><button class="btn btn-primary">Fikr yuborish</button></form>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="contact">
+      <div class="contact-info"><div class="eyebrow">ALOQA</div><h2>Biz bilan <span class="orange">bog'laning.</span></h2><p>Savolingiz bormi? Biz sizga yordam berishga tayyormiz.</p><div class="contact-item">📞 <span><b>Telefon</b><br>+998 50 117 44 35</span></div><div class="contact-item">✉️ <span><b>Email</b><br>OdiljonBahromov@cravehouse.uz</span></div><div class="contact-item">📍 <span><b>Manzil</b><br>Andijon, O'zbekiston</span></div><div class="contact-item">🕒 <span><b>Ish vaqti</b><br>Har kuni 09:00 – 23:00</span></div></div>
+      <form class="contact-form" id="contactForm"><h3>Xabar yuboring</h3><input name="name" placeholder="Ismingiz" required><input name="phone" type="tel" placeholder="+998 50 117 44 35" required><input name="email" type="email" placeholder="Email manzilingiz"><textarea name="message" placeholder="Xabaringiz..." required></textarea><button class="btn btn-primary">Xabarni yuborish ↗</button></form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a href="#home" class="logo footer-logo"><span class="logo-icon">C.</span><span>CRAVE<span class="orange">HOUSE</span><small>FOOD EXPERIENCE</small></span></a><p>Har bir luqmada lazzat. Har bir buyurtmada mehr.</p></div>
+      <div><h4>Tezkor havolalar</h4><a href="#home">Bosh sahifa</a><a href="#menu">Menyu</a><a href="#offers">Aksiyalar</a><a href="#about">Biz haqimizda</a></div>
+      <div><h4>Kategoriyalar</h4><a href="#categories">Burgerlar</a><a href="#categories">Pizzalar</a><a href="#categories">Ichimliklar</a><a href="#categories">Desertlar</a></div>
+      <div><h4>Yangiliklar</h4><p>Yangilik va chegirmalardan xabardor bo'ling.</p><form id="newsletterForm" class="newsletter"><input type="email" placeholder="Email manzilingiz" required><button>→</button></form><div class="socials"><a href="https://instagram.com" target="_blank" rel="noopener">IG</a><a href="https://t.me" target="_blank" rel="noopener">TG</a><a href="https://facebook.com" target="_blank" rel="noopener">FB</a></div></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 CRAVE HOUSE. Barcha huquqlar himoyalangan.</span><span>Sevgi bilan tayyorlandi ❤️</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="drawer-header"><h2>Savatcha <span id="drawerCount">(0)</span></h2><button class="close-btn" id="closeCart">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer"><div class="cart-subtotal"><span>Jami</span><strong id="cartTotal">0 so'm</strong></div><button class="btn btn-primary full-btn" id="checkoutBtn">Buyurtmani rasmiylashtirish →</button><button class="clear-cart" id="clearCart">Savatchani tozalash</button></div>
+  </aside>
+
+  <div class="modal" id="checkoutModal"><div class="modal-box"><button class="close-btn modal-close">×</button><h2>Buyurtmani rasmiylashtirish</h2><p>Ma'lumotlaringizni kiriting.</p><form id="checkoutForm"><input name="name" placeholder="Ism va familiya" required><input name="phone" type="tel" placeholder="+998 50 117 44 35" required><input name="address" placeholder="Yetkazib berish manzili" required><select name="delivery"><option value="5000">Yetkazib berish (+5 000 so'm)</option><option value="0">O'zim olib ketaman (bepul)</option></select><select name="payment"><option>Naqd pul</option><option>Karta (demo)</option></select><textarea name="note" placeholder="Qo'shimcha izoh"></textarea><div class="checkout-total">To'lov: <strong id="checkoutTotal">0 so'm</strong></div><button class="btn btn-primary full-btn">Buyurtmani tasdiqlash</button></form></div></div>
+
+  <div class="modal" id="quickModal"><div class="modal-box quick-box"><button class="close-btn modal-close">×</button><div id="quickContent"></div></div></div>
+  <div class="modal" id="profileModal"><div class="modal-box"><button class="close-btn modal-close">×</button><h2>Profil</h2><p>Buyurtmalaringiz tarixini ko'rish uchun ismingizni kiriting.</p><form id="profileForm"><input name="name" placeholder="Ismingiz" required><input name="phone" type="tel" placeholder="+998 50 117 44 35" required><button class="btn btn-primary full-btn">Saqlash</button></form><div id="profileInfo"></div></div></div>
+  <div class="modal" id="successModal"><div class="modal-box success-box"><button class="close-btn modal-close">×</button><div class="success-icon">✓</div><h2>Buyurtma qabul qilindi!</h2><p id="successText">Buyurtmangiz demo rejimida saqlandi.</p><button class="btn btn-primary modal-close">Ajoyib!</button></div></div>
+
+  <div class="toast" id="toast"></div>
+  <button class="back-top" id="backTop" aria-label="Yuqoriga">↑</button>
+  <nav class="mobile-bottom"><a href="#home">⌂<small>Bosh sahifa</small></a><a href="#menu">☷<small>Menyu</small></a><button id="mobileCart">🛒<small>Savatcha</small></button><button id="mobileFavorites">♡<small>Sevimlilar</small></button></nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
